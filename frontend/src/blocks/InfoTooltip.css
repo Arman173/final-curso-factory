@@ -1,0 +1,53 @@
+.popup__container_type_tooltip {
+  background: #ffffff;
+  width: 430px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 60px 36px;
+  z-index: 2;
+}
+
+.tooltip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.tooltip__icon {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 32px;
+}
+
+.tooltip__title {
+  color: #000000;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29.05px;
+  text-align: center;
+  margin: 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 544px) {
+  .popup__container_type_tooltip {
+    width: 282px;
+    padding: 50px 36px;
+  }
+
+  .tooltip__icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 24px;
+  }
+
+  .tooltip__title {
+    font-size: 20px;
+    line-height: 24.2px;
+  }
+}

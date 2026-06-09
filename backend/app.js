@@ -58,9 +58,9 @@ app.use((req, res, next) => {
   return next(error);
 });
 
-app.use(errorHandler);
-
 app.use(errorLogger);
+
+app.use(errorHandler);
 
 app.listen(port, () => {
   console.log(`Servidor corriendo en el puerto ${port}`);

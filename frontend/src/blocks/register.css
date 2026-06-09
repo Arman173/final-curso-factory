@@ -1,0 +1,125 @@
+.register {
+  max-width: 430px;
+  width: 100%;
+  margin: 60px auto 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", "Arial", sans-serif;
+  background-color: #000000;
+}
+
+.register__title {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29px;
+  text-align: center;
+  margin: 0 0 80px 0;
+}
+
+.register__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.register__input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #cccccc;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  padding: 0 0 13px 0;
+  margin-bottom: 30px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.register__input:focus {
+  border-bottom-color: #ffffff;
+}
+
+.register__input::placeholder {
+  color: #a9a9a9;
+}
+
+.register__button {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 2px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  padding: 14px 0;
+  margin-top: 180px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  width: 100%;
+  text-align: center;
+}
+
+.register__button:hover {
+  opacity: 0.85;
+}
+
+.register__signup {
+  margin-top: 32px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.register__signup p {
+  margin: 0;
+}
+
+.register__link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400;
+  margin-left: 5px;
+  transition: opacity 0.3s ease;
+}
+
+.register__link:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 544px) {
+  .register {
+    max-width: 260px;
+    margin-top: 50px;
+    padding: 0;
+  }
+
+  .register__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 75px;
+  }
+
+  .register__input {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  .register__button {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 11px 0;
+    margin-top: 140px;
+  }
+
+  .register__signup {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
